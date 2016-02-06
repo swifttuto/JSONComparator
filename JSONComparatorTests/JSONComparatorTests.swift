@@ -62,7 +62,7 @@ class JSONComparatorTests: XCTestCase {
     guard let data = JSONComparatorTests.data else {
       return XCTFail("Data should not be empty")
     }
-
+    
     self.measureBlock {
       do {
         let _ = try Freddy.JSON(data: data)
